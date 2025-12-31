@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #fafafa;
+  background: whitesmoke;
   color: #111;
   line-height: 1.6;
 }
@@ -32,6 +32,7 @@ a {
   justify-content: center;
   text-align: center;
   padding: 2rem 1rem;
+  background-color: white;
 }
 
 .lang {
@@ -70,6 +71,10 @@ a {
   justify-content: center;
   max-width: 1100px;
   margin: auto;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+
 }
 
 .product-image {
@@ -79,7 +84,8 @@ a {
 
 .product-image img {
   width: 100%;
-  height: auto;
+  height: auto; 
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .product-image figcaption {
@@ -113,6 +119,10 @@ a {
 }
 
 /* ABOUT & CONTACT */
+.about {
+  padding: 2rem;
+}
+
 .about,
 .contact {
   max-width: 720px;
@@ -184,8 +194,13 @@ footer {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  
+  .product {
+    padding: 2rem;
+  }
+  
+  
   .product-wrap {
-    flex-direction: column;
     text-align: center;
     width: 100%;
   }
@@ -200,5 +215,34 @@ footer {
 
   .product-image img {
     max-width: 340px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Starts 30px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Ends at normal position */
+  }
+}@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Starts 30px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Ends at normal position */
+  }
+}@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Starts 30px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Ends at normal position */
   }
 }
