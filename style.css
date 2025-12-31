@@ -101,8 +101,10 @@ a {
 }
 
 .product-text {
+  text-align: left;
   flex: 1 1 0;
   min-width: 280px;
+  padding: 3rem;
 }
 
 .product-text h2 {
@@ -201,10 +203,13 @@ footer {
   
   
   .product-wrap {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
+  .product-text{
 
+    padding: 0;
+  }
   .product-text h2,
   .product-text p,
   .product-image figcaption {
