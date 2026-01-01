@@ -92,12 +92,12 @@ a {
   margin-top: 0.6rem;
   font-size: 0.85rem;
   font-style: italic;
-  color: #666;
+  color: #333333;
   line-height: 1.4;
 }
 
 .product-image figcaption span {
-  color: #888;
+  color: #595959;
 }
 
 .product-text {
@@ -168,7 +168,7 @@ footer {
 .fig-label {
   font-style: normal;
   font-weight: 600;
-  color: #444;
+  color: #595959;
   margin-right: 0.25rem;
 }
 
@@ -202,12 +202,17 @@ footer {
 
   .product-wrap {
     padding: 1.5rem;
+    text-align: center;
   }
 
   .product-text {
     padding: 0;
     text-align: center;
   }
+ 
+  .product-text h2 {
+  text-align: center;
+}
 
   .product-text p {
     margin-left: auto;
