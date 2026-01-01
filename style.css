@@ -2,13 +2,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Source Serif 4", Georgia, serif;
 }
 
 body {
   background: whitesmoke;
   color: #111;
   line-height: 1.6;
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
 a {
@@ -196,24 +196,20 @@ footer {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-  
   .product {
     padding: 2rem;
   }
-  
-  
-  .product-wrap {
-    text-align: left;
-    width: 100%;
-  }
-  .product-text{
 
-    padding: 0;
+  .product-wrap {
+    padding: 1.5rem;
   }
-  .product-text h2,
-  .product-text p,
-  .product-image figcaption {
+
+  .product-text {
+    padding: 0;
     text-align: center;
+  }
+
+  .product-text p {
     margin-left: auto;
     margin-right: auto;
   }
@@ -226,28 +222,10 @@ footer {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Starts 30px below */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Ends at normal position */
-  }
-}@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px); /* Starts 30px below */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Ends at normal position */
-  }
-}@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px); /* Starts 30px below */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Ends at normal position */
+    transform: translateY(0);
   }
 }
