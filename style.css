@@ -102,7 +102,6 @@ a {
 
 .product-text {
   text-align: left;
-  flex: 1 1 0;
   min-width: 280px;
   padding: 3rem;
 }
