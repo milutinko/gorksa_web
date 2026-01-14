@@ -14,6 +14,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.65;
 }
 
 /* HERO */
@@ -138,13 +143,49 @@ a {
   font-size: 1rem;
 }
 
-.contact .cta {
+.contact .cta { 
   margin-top: 1.5rem;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 1px solid #111;
   text-decoration: none;
 }
+
+.contact .cta {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact .cta:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* CONTACT BOX LAYOUT */
+.contact-wrap {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-box {
+  flex: 1 1 300px;
+  padding: 2rem;
+  background: white;
+  border-radius: 1.5rem;
+  text-align: left;
+}
+
+.contact-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.contact-box p {
+  margin-bottom: 0.8rem;
+}
+
+
 
 /* FOOTER */
 footer {
@@ -198,6 +239,16 @@ footer {
   .product {
     padding: 2rem;
   }
+
+  .contact-wrap {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .contact-box {
+    text-align: center;
+  }
+
 
   .product-wrap {
     padding: 1.5rem;
